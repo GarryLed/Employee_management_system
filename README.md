@@ -29,9 +29,12 @@ The purpose of the high-level system architecture diagram is to provide an overv
 
 ### Step 3. Visulize components and their interactions 
 
+- [ ] Draw the Components and interactions between them:
+
 ### Step 4. Review and Refine 
 
 #### Example of High-Level System Architecture Disgram 
+- [x] Create a high-level system architecture diagram
 ```sql
 +---------------------------------------------+
 |               User Interface (UI)           |
@@ -72,19 +75,19 @@ The purpose of the high-level system architecture diagram is to provide an overv
 +---------------------------------------------+
 |             Database                        |
 |            - Employees                      |
-|                                             |
-|                                             |
+|            - Departments                    |
+|            - Roles                          |
 |                                             |
 |                                             |
 |                                             |
 +---------------------------------------------+
                     |
-                    |
+                    | External API calls 
                     v
 +---------------------------------------------+
-|                                             |
-|                                             |
-|                                             |
+|                 External Services           |
+|               - Email                       |
+|               - Authentation (OAuth)                              |
 |                                             |
 |                                             |
 |                                             |
