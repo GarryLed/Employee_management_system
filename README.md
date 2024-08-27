@@ -15,6 +15,85 @@ Build an OOP employee management system in C# with an SQL database
 
 - [ ] Create a high-level system architecture diagram.
 
+The purpose of the high-level system architecture diagram is to provide an overview of the system's major components, their interactions, and the flow off data within the system. 
+
+### Step 1. Identify major components
+1. **User interface (UI)**
+2. **Business Logic Layer (BLL)**
+3. **Data Access Layer (DAL)**
+4. **Database** 
+5. **External services/systems** 
+
+### Step 2. Define interactions between major components 
+
+
+### Step 3. Visulize components and their interactions 
+
+### Step 4. Review and Refine 
+
+#### Example of High-Level System Architecture Disgram 
+```sql
++---------------------------------------------+
+|               User Interface (UI)           |
+|         Web app/ Desktop app                |
+|          - Employee list view               |
+|          - Add / Edit employees             |
+|          - Authentacation                   |
+|                                             |
+|                                             |
++---------------------------------------------+
+                    |
+                    | User input / output 
+                    v
++---------------------------------------------+
+|            Business Logic Layer             |
+|           - Employee Management             |
+|           - Validation / Business rules     |
+|           - Authentacation                  |
+|                                             |
+|                                             |
+|                                             |
++---------------------------------------------+
+                    |
+                    | Data request / response 
+                    v
++---------------------------------------------+
+|             Data Access Layer (DAL)         |
+|            - Database connection            |
+|            - SQL queries                    |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
++---------------------------------------------+
+                    |
+                    | SQL queries / results 
+                    v
++---------------------------------------------+
+|             Database                        |
+|            - Employees                      |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
++---------------------------------------------+
+                    |
+                    |
+                    v
++---------------------------------------------+
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
++---------------------------------------------+
+
+```
+
+
 - [ ] Design the database schema.
 
 - [ ] Plan the classes and their relationships (UML diagrams).
