@@ -3,7 +3,7 @@
 Build an OOP employee management system in C# with an SQL database 
 
 ## Step 1: Planning and Requirements Gathering
-- [ ] Define the Requirements:
+1. **Define the Requirements:**
 
 - [ ] Identify the core functionalities (e.g., add, update, delete, and view employees).
 
@@ -11,27 +11,42 @@ Build an OOP employee management system in C# with an SQL database
 
 - [ ] Determine data to be stored (e.g., employee ID, name, department, salary, etc.).
 
-- [ ] Design the System:
+2. **Design the System:**
 
-- [ ] Create a high-level system architecture diagram.
+- [x] Create a high-level system architecture diagram.
 
-The purpose of the high-level system architecture diagram is to provide an overview of the system's major components, their interactions, and the flow off data within the system. 
+The purpose of the high-level system architecture diagram is to provide an overview of the system's major components, their interactions, and the flow off data within the system. Here are the steps: 
 
-### Step 1. Identify major components
+**Step 1. Identify major components**
 1. **User interface (UI)**
 2. **Business Logic Layer (BLL)**
 3. **Data Access Layer (DAL)**
 4. **Database** 
 5. **External services/systems** 
 
-### Step 2. Define interactions between major components 
+**Step 2. Define interactions between major components** 
+
+UI<->BLL
+- UI sends request to BBL (view list of current employees)
+- BLL processes the request and sends back a response (confirmation message, employee list)
+
+BLL<->DAL
+- BLL calls the methods in the DAL to retrieve or update data in the database
+- DAL returns confirmation of the operation to BLL 
+
+DAL<->Database
+- DAL executes queries in the database 
+- Database returns the results to the DAL
+
+BLL<->External services / systems 
+- BLL interacts with external srevices or systems to integrate them into the applicaion (API's)
 
 
-### Step 3. Visulize components and their interactions 
+**Step 3. Visulize components and their interactions** 
 
 - [ ] Draw the Components and interactions between them:
 
-### Step 4. Review and Refine 
+**Step 4. Review and Refine** 
 
 #### Example of High-Level System Architecture Disgram 
 - [x] Create a high-level system architecture diagram
